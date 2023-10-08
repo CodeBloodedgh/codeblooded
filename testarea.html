@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testarea.css">
+    <script>
+        let currentIndex = 0;
+        const slider = document.querySelector('.slider');
+        const images = document.querySelectorAll('.slider img');
+
+function slide(direction){
+    if(direction === "next"){
+        currentIndex++;
+    }
+    else{currentIndex--;}
+
+//ensuring the index stas withon border
+
+if (currentIndex < 0){
+    currentIndex = images.length -1;
+}
+else if (currentIndex >= images.length){
+    currentIndex = 0;
+}
+
+const translateX = -currentIndex * 300;
+
+slider.style.transform = 'translateX(${translateX}px)';
+}
+
+document.querySelector('.prev-buton').addEventListener('click',() => slide('prev'));
+document.querySelector('.next-buton').addEventListener('click',() => slide('prev'));
+    </script>
+
+    <title>TEST LAB</title>
+</head>
+<body>
+    
+    <div class="slider-container">
+        <div class="slider">
+            <img src="109922.jpg">
+            <img src="IMG_0209.JPG">
+            <img src="109922.jpg">
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+/*
+.search{
+    display:inline-flex;
+    align-items: center;
+    
+}
+#searchbar{
+    border-width: 0px;
+    border-style: solid;
+    background-color: rgba(3, 7, 43, 0.363);
+    width:280px;
+    padding:10px;
+    height:30px;
+    border-top-right-radius:0px ;
+    border-bottom-right-radius: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+    
+}
+.searchbar:hover{
+    background-color: rgb(218, 215, 215);
+}
+#searchbutton{
+    background-color: transparent ;
+    border:none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    background-color: grey;
+    
+}
+#searchbutton img{
+    width:30px;
+    height:28px;
+    background-color: grey;
+    vertical-align: middle;
+}
+/*
+#filter-container{
+    margin-top:10px;
+    background-color: gray;
+}
+label{
+    font-weight:bold;
+    margin-right:10px;
+    background-color: grey;
+    
+}
+#filter{
+    background-color: gray;
+    height:30px;
+}*/
+
+
+/*
+.filter{
+    border-width: 0px;
+    border-style: solid;
+    background-color: gray;
+    border-radius: 10px;
+    width:50px;
+    height:30px;
+    border-top-left-radius:0px ;
+    border-bottom-left-radius: 0px;
+    outline-color: rgb(131, 128, 128);
+    outline-width: 0.5px;
+    outline-style: solid;
+}
+.filter:hover{
+    background-color: rgb(87, 84, 84);
+    cursor: pointer;
+}
+
+#searchimg{
+    float: left;
+    background-color:rgba(3, 7, 43, 0.363);
+    outline-color: rgb(131, 128, 128);
+    outline-width: 0.5px;
+    outline-style: solid;
+    width:20px;
+    height:30px;
+    border: none ;
+
+}*/
+
+/*image slider*/
+.slider-container{
+    overflow: visible;
+    width:300px;
+}
+.slider{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slider img{
+    width:300px;
+    height:auto;
+}
+.prev-button,.next-button{
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border:none;
+}
+.prev-button{
+    position:absolute;
+    left:0;
+}
+.next-button{
+    position: absolute;
+    right: 0;
+}
+
